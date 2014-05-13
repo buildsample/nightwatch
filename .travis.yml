@@ -4,3 +4,15 @@ node_js:
   - "0.10"
 script:
   - ./bin/nightwatch -t examples/tests/google.js
+
+services:
+  - selenium
+  
+before_install :
+  - "export DISPLAY=:99.0"
+  - firefox --version
+  - "sh -e /etc/init.d/xvfb start"
+  - npm install contextify
+
+addons:
+  firefox : "21.0"
