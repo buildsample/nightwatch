@@ -17,6 +17,4 @@ before_install :
 addons:
   firefox : "21.0"
 notifications:
-    email:
-        - vidya@shippable.com
-        - vidyatest@hotmail.com
+    email: vidyatest@hotmail.com
