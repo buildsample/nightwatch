@@ -7,6 +7,7 @@ script:
   - ./bin/nightwatch -t examples/tests/google.js
   - npm test
   
+  
 addons:
    firefox: "23.0"
 services:
