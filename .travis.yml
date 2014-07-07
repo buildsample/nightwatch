@@ -7,15 +7,12 @@ script:
   - ./bin/nightwatch -t examples/tests/google.js
   - npm test
   
-  
+addons:
+   firefox: "23.0"
 services:
   - selenium
-
-before_install :
+before_script:
   - "export DISPLAY=:99.0"
-  #- firefox --version
-  - "sh -e /etc/init.d/xvfb start"
-  - npm install contextify
-
-addons:
-  firefox : "21.0"
+  - "/etc/init.d/xvfb start"
+after_script:
+  - "/etc/init.d/xvfb stop"
