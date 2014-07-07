@@ -8,6 +8,7 @@ script:
   - npm test
   
   
+  
 addons:
    firefox: "23.0"
 services:
