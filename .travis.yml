@@ -7,8 +7,6 @@ script:
   - ./bin/nightwatch -t examples/tests/google.js
   - npm test
   
-  
-  
 addons:
    firefox: "23.0"
 services:
@@ -16,5 +14,5 @@ services:
 before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
-#after_script:
- # - "/etc/init.d/xvfb stop"
+after_script:
+  - "/etc/init.d/xvfb stop"
