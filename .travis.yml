@@ -8,7 +8,7 @@ script:
   - npm test
   
 addons:
-   firefox: "23.0"
+   firefox: "28.0"
 services:
   - selenium
   
