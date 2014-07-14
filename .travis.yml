@@ -16,5 +16,3 @@ before_install :
 
 addons:
   firefox : "21.0"
-notifications:
-    email: vidyatest@hotmail.com
