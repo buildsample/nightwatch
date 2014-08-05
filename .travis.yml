@@ -16,4 +16,4 @@ before_install :
   #- npm install contextify
 
 addons:
-  firefox : "23.0"
+  firefox : "28.0"
