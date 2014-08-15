@@ -18,7 +18,7 @@ module.exports = {
     client
       .url('http://google.com')
       .waitForElementVisible('body', 1000)
-      .assert.title('Google')
+      .assert.title('Goog')
       .url(function(result) {
         //this.assert.ok(result.value.indexOf('google.') !== -1, 'Google url is ok');    
       })
