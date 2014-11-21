@@ -2,8 +2,10 @@ language: node_js
 
 node_js:
   - "0.10"
+
 script:
   - ./bin/nightwatch -t examples/tests/google.js
+
 
 
 services:
