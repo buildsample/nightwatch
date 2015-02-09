@@ -6,8 +6,6 @@ node_js:
 script:
   - ./bin/nightwatch -t examples/tests/google.js
 
-
-
 services:
   - selenium
   
